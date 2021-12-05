@@ -51,7 +51,7 @@
         <div id="top-bar__inner">
             <a id="top-bar__logo" class="site-logo" href="index.html">
                 <img class="img-responsive" width="175" height="102" src="img/Tesla_logo_white.png" alt="demo" />
-                <img class="img-responsive" width="80" height="102" src="img/Tesla_logo_black_transparent.png" alt="demo" />
+                <img class="img-responsive" width="175" height="102" src="img/Tesla_logo_black_long.png" alt="demo" />
             </a>
 
             <a id="top-bar__navigation-toggler" href="javascript:void(0);"><span></span></a>
@@ -879,32 +879,15 @@
             position: relative;
             bottom: 30px;
         }
-        /*.love {
-            
-            position: relative;
-            bottom: 30px;
-        }*/
     </style>
-    <footer id="footer" class="text--center text--lg-left">
-        <!-- <div class="grid grid--container">
-            <div class="row">
-                <div class="col col--xs-12">
+    <footer id="footer" class="text--center text--lg-left" id="footer_content">
+            <div class="row row--xs-middle text--center">
+                <div class="col col--sm-10 col--md-8 col--lg-5">
                     <div class="__item">
-                        <a class="site-logo" href="index.html">
-                            <img class="img-responsive lazy" width="175" height="42" src="img/blank.gif" data-src="img/site_logo.png" alt="demo" />
-                        </a>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="row row--xs-middle text--center" id="footer_content">
-                    <div class="col col--sm-10 col--md-8 col--lg-5">
-                    <div class="__item">
-                        <address class="__text love" style="font-size: 40px;">
-								With Love From <br> TESLA Society
-							</address>
-
-                        <div class="social-btns __text love">
+                        <address class="__text" style="font-size: 30px;">
+                            With Love From <br> TESLA Society
+    					</address>
+                        <div class="social-btns __text">
                             On Social Networks: &nbsp;
                             <a class="fontello-facebook" style="color: #61f2ff;" href="https://www.facebook.com/Tesla.IIITA/"></a>
                             &nbsp;
@@ -946,28 +929,46 @@
                     }
                     #logo1 {
                         position: relative;
-                        left: -120px;
+                        left: -100px;
                     }
                     #logo2 {
                         position: relative;
-                        left: -250px;
+                        left: -50px;
                     }
                     #logo3 {
                         position: relative;
-                        left: -150px;
+                        left: -50px;
                     }
                 </style>
-                <div class="col col--sm-10 col--md-8 col--lg-7">
+
+                    <a href="http://iiita.ac.in"><img src="img/IIIT_logo.gif" width="100px" height="100px" id="logo1"></a>
+
+                    <img src="img/Tesla_logo_white.png" width="250px" height="100px" id="logo2">
+
+                <div class="c--anim-btn" id="logo3">
+                    <span class="c-anim-btn" style="color: #ffffff;">
+                         <p style="font-size: 30px;">And our Special Sponsor!</p>
+                    </span>
+                    <span>
+                        <img src="./img/DIC_Logo_2.png" style="height: 150px;">
+                    </span>
+                </div>
+
+                <!-- Old code, keeping because u never know -->
+
+                <!-- <div class="col col--sm-10 col--md-8 col--lg-7">
                     <div class="__item">
                         <nav id="footer__navigation" class="navigation">
                             <div class="row row--xs">
                                 <div class="col col--xs-auto col--md-3 col--lg-4" id="logo1">
-                                    <a href="http://iiita.ac.in"><img src="img/IIIT_logo.gif" width="150px" height="150px"></a>
+                                    <a href="http://iiita.ac.in"><img src="img/IIIT_logo.gif" width="100px" height="100px"></a>
                                 </div>
+
                                 <div class="col col--xs-auto col--md-3 col--lg-4"  id="logo2">
-                                    <img src="img/Tesla_logo_white.png" width="375px" height="150px">
+                                    <img src="img/Tesla_logo_white.png" width="250px" height="100px">
                                 </div>
-                                <div class="col col--xs-auto col--md-3 col--lg-4" id="logo3">
+
+                                <div class="col col--xs-auto col--md-3 col--lg-4" ">
                                     <div class="c--anim-btn">
                                         <span class="c-anim-btn" style="color: #ffffff;">
                                             <p style="font-size: 30px;">And our Special Sponsor!</p>
@@ -977,21 +978,14 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col hide--md col-MB-20"></div>
+                                <div class="col hide--md col-MB-20">
+                                    
+                                </div>
                             </div>
                         </nav>
                     </div>
-                </div>
+                </div> -->
             </div>
-
-            <!-- <div class="row row--xs-middle row--lg-between">
-					<div class="col col--sm-10 col--md-8 col--lg-6">
-						
-					</div>
-
-					 -->
-        </div>
-        </div>
     </footer>
     <!-- end footer -->
 
