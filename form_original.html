@@ -1,258 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Tesla IIITA</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-        <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+<head>
+    <title>Tesla IIITA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <meta name="theme-color" content="#3F6EBF" />
-        <meta name="msapplication-navbutton-color" content="#3F6EBF" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#3F6EBF" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
 
-        <!-- Favicons
+    <meta name="theme-color" content="#3F6EBF" />
+    <meta name="msapplication-navbutton-color" content="#3F6EBF" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3F6EBF" />
+
+    <!-- Favicons
             ================================================== -->
-        <link rel="shortcut icon" href="https://demo.artureanec.com/404.html">
-        <link rel="apple-touch-icon" href="https://demo.artureanec.com/404.html">
-        <link rel="apple-touch-icon" sizes="72x72" href="https://demo.artureanec.com/404.html">
-        <link rel="apple-touch-icon" sizes="114x114" href="https://demo.artureanec.com/404.html">
+    <link rel="shortcut icon" href="https://demo.artureanec.com/404.html">
+    <link rel="apple-touch-icon" href="https://demo.artureanec.com/404.html">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://demo.artureanec.com/404.html">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://demo.artureanec.com/404.html">
 
-        <!-- CSS
+    <!-- CSS
             ================================================== -->
-        <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
 
-        <!-- Load google font
+    <!-- Load google font
             ================================================== -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
-        <script type="text/javascript">
-            var _html = document.documentElement,
-                isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
-
-            _html.className = _html.className.replace("no-js", "js");
-
-            isTouch ? _html.classList.add("touch") : _html.classList.add("no-touch");
-        </script>
-        <script type="text/javascript" src="js/device.min.js"></script>
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        #form{
-            font-size: 1.4rem;
-            width: 100%;
-            display: flex;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            }
-            .login {
-            position: relative;
-            background: #686d6f7a;
-            padding: 35px 40px;
-            border-radius: 4px;
-            z-index: 1;
-            overflow: hidden;
-            box-shadow: 0px 12px 31px #ffffff52, 0px 36px 31px #000000a1;
-            animation: login 0.88s ease;
+        html {
+            scroll-behavior: smooth;
         }
-        @keyframes login {
-            0% {
-                transform: translateY(-10%) scale(0.8);
-                opacity: 0;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-        .login:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #abcdef;
-            width: 100%;
-            z-index: -1;
-            background-size: 182vh;
-            background-position: 28%, 83%;
-            filter: blur(24px);
-            background-repeat: no-repeat;
-            opacity: 0.8;
-        }
-        .glow-on-hover {
-            width: 220px;
-            height: 50px;
-            border: none;
-            outline: none;
-            color: #fff;
-            background: #111;
-            cursor: pointer;
-            position: relative;
-            z-index: 0;
-            border-radius: 10px;
-        }
-         
-        .glow-on-hover:before {
-            content: '';
-            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-            position: absolute;
-            top: -2px;
-            left:-2px;
-            background-size: 400%;
-            z-index: -1;
-            filter: blur(5px);
-            width: calc(100% + 4px);
-            height: calc(100% + 4px);
-            animation: glowing 20s linear infinite;
+    </style>
+    <script type="text/javascript">
+        var _html = document.documentElement,
+            isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+        _html.className = _html.className.replace("no-js", "js");
+
+        isTouch ? _html.classList.add("touch") : _html.classList.add("no-touch");
+    </script>
+    <script type="text/javascript" src="js/device.min.js"></script>
+</head>
+<style>
+    #form {
+        font-size: 1.4rem;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .login {
+        position: relative;
+        background: #686d6f7a;
+        padding: 35px 40px;
+        border-radius: 4px;
+        z-index: 1;
+        overflow: hidden;
+        box-shadow: 0px 12px 31px #ffffff52, 0px 36px 31px #000000a1;
+        animation: login 0.88s ease;
+    }
+    
+    @keyframes login {
+        0% {
+            transform: translateY(-10%) scale(0.8);
             opacity: 0;
-            transition: opacity .3s ease-in-out;
-            border-radius: 10px;
         }
-         
-        .glow-on-hover:active {
-            color: #000
-        }
-         
-        .glow-on-hover:active:after {
-            background: transparent;
-        }
-         
-        .glow-on-hover:hover:before {
+        100% {
+            transform: scale(1);
             opacity: 1;
         }
-         
-        .glow-on-hover:after {
-            z-index: -1;
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: #111;
-            left: 0;
-            top: 0;
-            border-radius: 10px;
+    }
+    
+    .login:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #abcdef;
+        width: 100%;
+        z-index: -1;
+        background-size: 182vh;
+        background-position: 28%, 83%;
+        filter: blur(24px);
+        background-repeat: no-repeat;
+        opacity: 0.8;
+    }
+    
+    .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:active {
+        color: #000
+    }
+    
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+    
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+    
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
         }
-         
-        @keyframes glowing {
-            0% { background-position: 0 0; }
-            50% { background-position: 400% 0; }
-            100% { background-position: 0 0; }
+        50% {
+            background-position: 400% 0;
         }
-        input[type=text] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          box-sizing: border-box;
+        100% {
+            background-position: 0 0;
         }
-        input[type=number] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          box-sizing: border-box;
-        }
-        input[type=email] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          box-sizing: border-box;
-        }
-        input[type=date] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          box-sizing: border-box;
-        }
-     
-    </style>
-    <body>
-        <header>
-            <style>
-                .flex-container {
-                  display: flex;
-                  flex-wrap: nowrap;
-                }
+    }
+    
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    input[type=number] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    input[type=date] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+</style>
 
-                .flex-container > div {
-                  /*width: 100px;*/
-                  margin: 10px;
-                  margin-left: 50px;
-                  text-align: center;
-                  line-height: 75px;
-                  font-size: 30px;
-                }
-                </style>
-                <div class="flex-container">
-                    <div>
-                        <a href="index.html"><img src="./img/Tesla_logo_black_long.png" height="100rem"></a>
-                        </div>
-                    <div>
-                        <h1>Issue a Component</h1>
-                    </div>
-                </div>
-           </div>
-        </header>
-       <div id="form">
-       <form method="post" autocomplete="off" name="google-sheet" >
-           
-           
-        <div class="login">
-           Name :<br>
-           <input type= "text" name="username"><br>
-           
-           
-           Enrollment Number :<br>
-           <input type= "text" name="rollno"><br>
-           
-           
-           <label for="email">Email :</label><br>
-           <input type="email" id="email" name="email"/><br>
-           
-           
-           Components Required (Comma Separated):<br>
-           <input type= "text" name="component"><br>
-           
-           
-           <label for="quantity">Quantity :</label><br>
-           <input type="number" name="quantity" min="1" max="100"><br>
-           
-           
-           <label for="date">Issue Date :</label><br>
-           <input type="date" name="issue_date"><br>
-           
-     
-           <label for="duration">Return Date :</label><br>
-           <input type="date" name="duration" min="1" max="100"><br>
-           
-     
-           <label for="description">Project Details you are working on:</label><br>
-           <textarea name="description" rows="6" cols="60"></textarea><br><br>
-           
-           
-           <button class="glow-on-hover" type="submit" value="Submit">Submit</button>
-           
-           
-       </div>    
-       </form>
+<body>
+    <header>
+        <style>
+            .flex-container {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            
+            .flex-container>div {
+                /*width: 100px;*/
+                margin: 10px;
+                margin-left: 50px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+        </style>
+        <div class="flex-container">
+            <div>
+                <a href="index.html"><img src="./img/Tesla_logo_black_long.png" height="100rem"></a>
+            </div>
+            <div>
+                <h1>Issue a Component</h1>
+            </div>
         </div>
-       <script>
+        </div>
+    </header>
+    <div id="form">
+        <form method="post" autocomplete="off" name="google-sheet">
+            <div class="login">
+                Name :<br>
+                <input type="text" name="username"><br> Enrollment Number :<br>
+                <input type="text" name="rollno"><br>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" /><br> Components Required (Comma Separated):<br>
+                <input type="text" name="component"><br>
+                <label for="quantity">Quantity :</label><br>
+                <input type="number" name="quantity" min="1" max="100"><br>
+                <label for="date">Issue Date :</label><br>
+                <input type="date" name="issue_date"><br>
+                <label for="duration">Return Date :</label><br>
+                <input type="date" name="duration" min="1" max="100"><br>
+                <label for="description">Project Details you are working on:</label><br>
+                <textarea name="description" rows="6" cols="60"></textarea><br><br>
+                <button class="glow-on-hover" type="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzUINyzMndFvdWi9SKQZIdDgwb5sY5NNSZ4gQxBqLyFWpihWWY1Li5WdUqAwPIQV1Ml/exec'
         const form = document.forms['google-sheet']
-     
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
-     
-    </body>
-</html>
+    </script>
+</body>
 
+</html>
