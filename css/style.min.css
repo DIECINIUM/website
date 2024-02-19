@@ -90,6 +90,44 @@
 .v-bottom {
   vertical-align: bottom;
 }
+.rounded-image {
+  border-radius: 5%; /* This makes the image round */
+  overflow: hidden; /* This ensures the image doesn't protrude beyond the rounded border */
+}
+.slider {
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
 #top-bar__choose-lang img {
   -webkit-user-select: none;
   -moz-user-select: none;
